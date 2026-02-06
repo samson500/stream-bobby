@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from stream-africa.netlify.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Feb 2026 10:57:20 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STREAM AFRICA</title>
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: radial-gradient(circle at top right, #1a2e2a, #0a110f); 
+        font-family: Arial, sans-serif;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    /* FIXED/STICKY TOP BAR */
+    .topbar {
+        position: sticky; 
+        top: 0;
+        z-index: 1000; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 5%;
+        background: rgba(10, 17, 15, 0.9); 
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(216, 232, 209, 0.1);
+    }
+
+    .logo {
+        font-size: 32px; 
+        font-weight: 900;
+        color: #d8e8d1; 
+        letter-spacing: 8px; 
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    .join-btn {
+        background: #d8e8d1;
+        color: #0a110f;
+        padding: 10px 20px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 15px;
+        transition: 0.3s;
+    }
+
+    /* VIDEO SECTION */
+    .video-box {
+        width: 90%;
+        margin: 40px auto 20px auto;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(216, 232, 209, 0.3);
+        border-radius: 12px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .video-box video {
+        width: 100%;
+        height: 500px; 
+        border-radius: 10px;
+        object-fit: cover; 
+    }
+
+    .video-box .reward-btn {
+        display: inline-block;
+        margin-top: 15px;
+        background: #d8e8d1;
+        color: #0a110f;
+        padding: 10px 25px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    /* GRID SECTION */
+    .how-it-works-section {
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .works-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+    }
+
+    .work-box {
+        background: rgba(216, 232, 209, 0.1); 
+        border: 1px solid rgba(216, 232, 209, 0.2);
+        border-radius: 12px;
+        padding: 20px;
+        text-align: center;
+        backdrop-filter: blur(5px);
+    }
+
+    .work-box p {
+        margin: 10px 0;
+        font-size: 15px;
+        color: white;
+    }
+
+    .join-btn-small {
+        display: inline-block;
+        margin-top: 15px;
+        background: #d8e8d1;
+        color: #0a110f;
+        padding: 10px 25px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+   /* FOOTER */
+    .footer {
+        text-align: center;
+        padding: 30px 0;
+        color: #d8e8d1;
+        font-size: 16px;
+        margin-top: 40px;
+    }
+
+    .footer-line {
+        width: 90%;
+        height: 1px;
+        background: rgba(216, 232, 209, 0.3);
+        margin: 60px auto 0 auto;
+    }
+
+     .activity-feed-container {
+            position: fixed; 
+            bottom: -100px; 
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000; 
+            width: 90%;
+            max-width: 400px;
+            padding: 15px;
+            background: #0a110f; 
+            border: 1px solid #d8e8d1; 
+            border-radius: 18px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.9);
+            display: flex;
+            align-items: center;
+            transition: bottom 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+        }
+
+        .show-activity { bottom: 25px; }
+        .activity-icon { margin-right: 12px; flex-shrink: 0; }
+        #activity-text { flex-grow: 1; font-size: 13px; line-height: 1.5; color: white; text-align: left; }
+        .stream-brand { color: #d8e8d1; font-weight: 900; text-transform: uppercase; }
+        .activity-user { color: #d8e8d1; font-weight: 700; }
+        .activity-amount { color: #d8e8d1; font-weight: 900; }
+        .activity-amount.withdrawal { color: #ff4444; }
+        .activity-time { color: #888; font-size: 11px; display: block; margin-top: 3px; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+    <div class="logo">STREAM</div>
+    <a class='join-btn' href='reward.html'>Join Now</a>
+</div>
+
+<div class="video-box">
+    <video src="video.mp4" controls></video>
+    <a class='reward-btn' href='reward.html'>JOIN US NOW 🔥</a>
+</div>
+
+<div class="how-it-works-section">
+    <h2 style="text-align:center; color: #d8e8d1; margin-bottom: 30px; letter-spacing: 3px;">HOW IT WORKS</h2>
+    
+    <div class="works-grid">
+        
+        <div class="work-box">
+            <img src="hero1.jpg" alt="Livestream" style="width: 100%; border-radius: 8px;">
+            <p style="font-weight:bold; color:#d8e8d1; font-size:18px; margin-top:15px;">🔴🎥 LIVESTREAM COLLAB: Turn Your Presence into Profit</p>
+            <p style="text-align: left; line-height: 1.6;">
+                Why should only the host get paid? On STREAM, everyone earns—hosts, co-streamers, and viewers alike.<br><br>
+                1. Join a verified session.<br>
+                2. Engage with the content.<br>
+                3. Earn rewards in real-time.<br><br>
+                Livestreaming isn’t just entertainment anymore—it’s an income stream.
+            </p>
+            <a class='join-btn-small' href='reward.html'>Join Now</a>
+        </div>
+
+        <div class="work-box">
+            <img src="hero2.jpg" alt="Audio" style="width: 100%; border-radius: 8px;">
+            <p style="font-weight:bold; color:#d8e8d1; font-size:18px; margin-top:15px;">🎧 AUDIO COLLAB: Your Ears Are Now Assets</p>
+            <p style="text-align: left; line-height: 1.6;">
+                Collaborate directly with artists, labels, and distributors. On STREAM, listening to music isn't just a hobby—it’s a career move.<br><br>
+                • Stream official songs and new releases.<br>
+                • Engage with music campaigns and promotions.<br>
+                • Earn $1.50 (₦1,550) per qualified sound collaboration.<br><br>
+                Don't just hit play. Get paid for every beat.
+            </p>
+            <a class='join-btn-small' href='reward.html'>Join Now</a>
+        </div>
+
+        <div class="work-box">
+            <img src="hero3.jpg" alt="Video" style="width: 100%; border-radius: 8px;">
+            <p style="font-weight:bold; color:#d8e8d1; font-size:18px; margin-top:15px;">🎬 VIDEO COLLAB: Watch, Promote & Profit</p>
+            <p style="text-align: left; line-height: 1.6;">
+                Connect with movie studios and global brands. You don’t just watch trailers and promos; you participate in the distribution and promotion that helps brands go viral.<br><br>
+                • Access movie trailers, promos, and brand reels.<br>
+                • Promote special studio releases to a wider audience.<br>
+                • Earn $2.70 (₦2,750) for every successful collaboration.<br><br>
+                Every view has value. Every engagement has a reward.
+            </p>
+            <a class='join-btn-small' href='reward.html'>Join Now</a>
+        </div>
+
+        <div class="work-box">
+            <img src="hero4.jpg" alt="Snap" style="width: 100%; border-radius: 8px;">
+            <p style="font-weight:bold; color:#d8e8d1; font-size:18px; margin-top:15px;">🖼️ SNAP COLLAB — Where Visuals Pay You</p>
+            <p style="text-align: left; line-height: 1.6;">
+                Turn your attention into currency. Collaborate with top designers, movie studios, and record labels by engaging with official artworks, posters, and campaign creatives.<br><br>
+                • Engage: Interact with premium posters and illustrations.<br>
+                • Support: Boost brand visibility.<br>
+                • Earn: $1.10 (₦1,100) per creative collab.<br><br>
+                Your engagement builds your earnings. Every image is an opportunity.
+            </p>
+            <a class='join-btn-small' href='reward.html'>Join Now</a>
+        </div>
+
+        <div class="work-box">
+            <img src="hero5.jpg" alt="Download" style="width: 100%; border-radius: 8px;">
+            <p style="font-weight:bold; color:#d8e8d1; font-size:18px; margin-top:15px;">📥 FILE DOWNLOAD — Download to Earn</p>
+            <p style="text-align: left; line-height: 1.6;">
+                Turn your storage into a revenue stream. Help brands and creators expand their reach by downloading music, creative resources, and exclusive digital content.<br><br>
+                • Access: Exclusive music and promos.<br>
+                • Support: Distribution for global creators.<br>
+                • Earn: $1.00 (₦1,000) per download.<br><br>
+                Your clicks work for you. Every download is a reward.
+            </p>
+            <a class='join-btn-small' href='reward.html'>Join Now</a>
+        </div>
+
+        <div class="work-box">
+            <img src="hero6.jpg" alt="Global" style="width: 100%; border-radius: 8px;">
+            <p style="font-weight:bold; color:#d8e8d1; font-size:18px; margin-top:15px;">STREAM AFRICA IS LIVE — EVERYWHERE 🌍🔥</p>
+            <p style="line-height: 1.6;">
+                No borders. No limits. No restrictions.<br><br>
+                STREAM AFRICA is a global movement open to the world. Whether you are in Africa or beyond, join thousands of creators, promoters, and earners turning digital engagement into real income.<br><br>
+                One platform. One vision. Unlimited reach. The future is HERE. 💚🚀
+            </p>
+            <a class='join-btn-small' href='reward.html'>Join Now</a>
+        </div>
+
+        <div class="work-box" style="grid-column: 1 / -1;">
+            <img src="hero7.jpg" alt="Verified" style="max-width: 400px; width: 100%; border-radius: 8px;">
+            <p style="font-weight:bold; color:#d8e8d1; font-size:22px; margin-top:15px;">✅ STREAM AFRICA: Verified & Legitimate</p>
+            <p style="max-width: 800px; margin: 10px auto; line-height: 1.6;">
+                Trust isn’t just a promise—it’s our standard.<br><br>
+                STREAM AFRICA is officially registered and certified with the Corporate Affairs Commission (CAC) of Nigeria. We operate with full transparency and legal compliance.<br><br>
+                • <b>Legally Recognized:</b> Fully compliant with Nigerian business laws.<br>
+                • <b>Accountable:</b> Built on integrity and long-term impact.<br>
+                • <b>Secure:</b> A credible platform you can depend on.<br><br>
+                STREAM AFRICA: The Brand You Can Trust. 💎
+            </p>
+            <a class='join-btn-small' href='reward.html'>Join Now</a>
+        </div>
+
+    </div>
+</div>
+
+<div class="footer-line"></div>
+
+<div class="footer">
+    &copy; 2026 STREAM AFRICA — All Rights Reserved
+</div>
+<div id="activity-feed" class="activity-feed-container">
+    <div class="activity-icon">
+        <svg id="activity-svg" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d8e8d1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg>
+    </div>
+    <div id="activity-text">Connecting to Stream Africa...</div>
+</div>
+
+<script>
+    
+
+    // 10 UNIQUE ACTIVITIES
+    const ACTIVITIES = [
+        { name: "Adesua M.", type: "withdrawn", amount: "35,000", location: "Lagos", time: "just now" },
+        { name: "Suleiman Y.", type: "joined", amount: "12,000", location: "Jos", time: "3 minutes ago" },
+        { name: "Ifeanyi P.", type: "withdrawn", amount: "150,000", location: "Lekki", time: "just now" },
+        { name: "Damilola F.", type: "joined", amount: "12,000", location: "Akure", time: "6 minutes ago" },
+        { name: "Umar G.", type: "withdrawn", amount: "28,200", location: "Sokoto", time: "4 minutes ago" },
+        { name: "Chinwe H.", type: "joined", amount: "12,000", location: "Calabar", time: "2 minutes ago" },
+        { name: "Abubakar L.", type: "withdrawn", amount: "89,000", location: "Maiduguri", time: "10 minutes ago" },
+        { name: "Obinna K.", type: "joined", amount: "12,000", location: "Port Harcourt", time: "2 minutes ago" },
+        { name: "Fatima S.", type: "joined", amount: "12,000", location: "Kano", time: "5 minutes ago" },
+        { name: "Chidi N.", type: "withdrawn", amount: "15,500", location: "Enugu", time: "10 minutes ago" },
+        { name: "Tunde W.", type: "joined", amount: "12,000", location: "Ibadan", time: "1 minute ago" },
+        { name: "Zainab A.", type: "withdrawn", amount: "52,000", location: "Abuja", time: "just now" },
+        { name: "Efe J.", type: "joined", amount: "12,000", location: "Warri", time: "4 minutes ago" },
+        { name: "Ngozi V.", type: "withdrawn", amount: "22,400", location: "Owerri", time: "8 minutes ago" },
+        { name: "Mustapha B.", type: "joined", amount: "12,000", location: "Kaduna", time: "3 minutes ago" },
+        { name: "Amaka R.", type: "withdrawn", amount: "110,000", location: "Onitsha", time: "just now" }
+    ];
+    let activityIndex = 0;
+
+    function cycleActivityFeed() {
+        const activityElement = document.getElementById('activity-text');
+        const feedContainer = document.getElementById('activity-feed');
+        const activitySvg = document.getElementById('activity-svg');
+        const act = ACTIVITIES[activityIndex];
+        let messageHtml, svgIcon;
+
+        if (act.type === 'joined') {
+            messageHtml = `<span class="activity-user">${act.name}</span> from ${act.location} has joined <span class="stream-brand">STREAM AFRICA</span> and earned <span class="activity-amount">₦${act.amount}</span> cashback!`;
+            svgIcon = `<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><polyline points="16 11 18 13 22 9"/>`;
+        } else {
+            messageHtml = `<span class="activity-user">${act.name}</span> from ${act.location} successfully withdrew <span class="activity-amount withdrawal">₦${act.amount}</span> from <span class="stream-brand">STREAM AFRICA</span>!`;
+            svgIcon = `<line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>`;
+        }
+
+        activityElement.innerHTML = `${messageHtml}<span class="activity-time">${act.time}</span>`;
+        activitySvg.innerHTML = svgIcon;
+        feedContainer.classList.add('show-activity');
+        setTimeout(() => {
+            feedContainer.classList.remove('show-activity');
+            activityIndex = (activityIndex + 1) % ACTIVITIES.length;
+        }, 7000); 
+    }
+
+    window.onload = function () {
+        setTimeout(cycleActivityFeed, 2000);
+        setInterval(cycleActivityFeed, 12000);
+
+        
+    };
+</script>
+</body>
+
+<!-- Mirrored from stream-africa.netlify.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Feb 2026 10:57:39 GMT -->
+</html>
